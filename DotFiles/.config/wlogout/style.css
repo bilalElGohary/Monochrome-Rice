@@ -1,0 +1,38 @@
+* {
+  all: unset;
+}
+
+window {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+button {
+  font-family: "CodeNewRoman Nerd Font Mono";
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border: 3px solid #333333;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15%;
+  margin: 10px;
+  padding: 10px 10px;
+}
+
+button:hover, button:focus {
+  background-color: #262626;
+  border: 3px solid #ffffff;
+  background-size: 20%;
+}
+
+#lock {
+  background-image: image(url("~/.config/wlogout/lock.png"));
+}
+#shutdown {
+  background-image: image(url("~/.config/wlogout/power.png"));
+}
+#logout {
+  background-image: image(url("~/.config/wlogout/logout.png"));
+}
+#reboot {
+  background-image: image(url("~/.config/wlogout/restart.png"));
+}

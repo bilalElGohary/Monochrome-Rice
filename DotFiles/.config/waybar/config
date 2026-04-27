@@ -1,0 +1,88 @@
+{
+    "position": "bottom", 
+    "height": 0,
+    "modules-center": ["hyprland/workspaces", "network", "pulseaudio", "battery", "temperature", "custom/fan", "custom/date", "clock"],
+	"hyprland/workspaces": {
+		"disable-scroll": true,
+		"all-outputs": true,
+		"format": "{icon}",
+	 	"persistent_workspaces": {
+	 		"1": [],
+	 		"2": [],
+	 		"3": [],
+	 		"4": [],
+	 		"5": [],
+	 		"6": [],
+	 		"7": [],
+	 		"8": [],
+	 		"9": [],
+	 		"10": []
+	},
+         	"format-icons": {
+             		"1": "一",
+             		"2": "二",
+             		"3": "三",
+             		"4": "四",
+             		"5": "五",
+             		"6": "六",
+             		"7": "七",
+             		"8": "八",
+             		"9": "九",
+             		"10": "〇"
+         }
+     },
+	"custom/date": {
+    		"format": "{}",
+		"interval": 3600,
+		"exec": "$HOME/bin/waybar-date.sh"
+	},
+	"clock": {
+		"format": "{:%H:%M:%S} ",
+        	"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+	},
+	"battery": {
+        	"states": {
+            		"warning": 30,
+            		"critical": 15,
+        	},
+        	"format": "BATT {capacity}%",
+        	"format-charging": "BATT {capacity}%",
+        	"format-plugged": "BATT {capacity}%",
+        	"format-alt": "BATT {time}",
+        	"format-full": "BATT {capacity}%",
+	},
+	"network": {
+        	"format-wifi": "{essid}",
+        	"format-ethernet": "CONN",
+        	"format-linked": "{ifname} (No IP) ",
+        	"format-disconnected": "DISC",
+		"tooltip-format-wifi": "Signal Strenght: {signalStrength}% | Down Speed: {bandwidthDownBits}, Up Speed: {bandwidthUpBits}",
+	},
+	"pulseaudio": {
+		"on-click": "pactl set-sink-mute 45 toggle",
+		"format": "VOL  {volume}%",
+        	"format-muted": "Muted",
+        	"format-icons": {
+            	"headphone": "VOLH",
+            	"hands-free": "VOLB",
+            	"headset": "VOLB",
+            	"phone": "VOLP",
+            	"portable": "VOLP",
+            	"car": "VOLC"
+        },
+    },
+    	"temperature": {
+    		"thermal-zone": 2,
+   	 	"hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+    		"critical-threshold": 80,
+    		"format-critical": "TEMP {temperatureC}°C",
+    		"format": "TEMP {temperatureC}°C"
+	},
+	"custom/fan": {
+    "exec": "sensors | grep 'fan1' | awk '{print $2}'",
+    "interval": 10,
+    "format": "SEN {}",
+    "tooltip": false
+}
+}
+

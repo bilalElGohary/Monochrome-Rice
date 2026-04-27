@@ -1,0 +1,7 @@
+*.swp
+*.swo
+undo/
+/shada/
+.env
+.DS_Store
+Thumbs.db

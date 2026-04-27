@@ -1,0 +1,53 @@
+[window]
+opacity = 0.7
+dynamic_padding = true
+
+[window.padding]
+x = 5
+y = 5
+
+[font]
+size = 10
+
+[colors.primary]
+background = '#000000'
+foreground = '#e0e0e0'
+
+[colors.cursor]
+text = '#000000'
+cursor = '#ffffff'
+
+[colors.selection]
+text = '#000000'
+background = '#666666'
+
+[colors.normal]
+black =   '#1a1a1a'
+red =     '#b0b0b0'
+green =   '#d0d0d0'
+yellow =  '#c0c0c0'
+blue =    '#909090'
+magenta = '#a0a0a0'
+cyan =    '#b0b0b0'
+white =   '#ffffff'
+
+[colors.bright]
+black =   '#4d4d4d'
+red =     '#ffffff'
+green =   '#ffffff'
+yellow =  '#ffffff'
+blue =    '#ffffff'
+magenta = '#ffffff'
+cyan =    '#ffffff'
+white =   '#ffffff'
+
+[colors.dim]
+black =   '#0f0f0f'
+red =     '#4a4a4a'
+green =   '#4a4a4a'
+yellow =  '#4a4a4a'
+blue =    '#4a4a4a'
+magenta = '#4a4a4a'
+cyan =    '#4a4a4a'
+white =   '#4a4a4a'
+

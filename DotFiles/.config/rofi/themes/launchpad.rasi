@@ -1,0 +1,88 @@
+configuration {
+    show-icons: true;
+    display-drun: "🔍";
+    drun-display-format: "{name}";
+    border-radius:  5px;
+}
+
+* {
+    font: "JetBrains Mono Bold 11";
+    bg0:  #000000e5;
+    bg1:  #1a1a1a;
+    bg2:  #ffffff;
+    fg0:  #ffffff;
+    fg1:  #808080;
+    background-color: transparent;
+    text-color:       @fg0;
+    padding:          0px;
+    margin:           0px;
+}
+
+window {
+  fullscreen: true;
+  padding: 5% 2%;
+  background-color: @bg0;
+}
+
+mainbox {
+  padding:  8px;
+}
+
+inputbar {
+  background-color: @bg0;
+  margin:   0px calc( 50% - 250px );
+  padding:  10px 15px;
+  spacing:  10px;
+  border:         2px;
+  border-radius:  0px;
+  border-color:   @bg2;
+  children: [icon-search,entry];
+}
+
+prompt {
+  enabled:  false;
+}
+
+icon-search {
+  expand:   false;
+  filename: "search";
+  size: 20px;
+  vertical-align: 0.5;
+}
+
+entry {
+  placeholder:        "SEARCH APPS...";
+  placeholder-color:  @fg1;
+  vertical-align: 0.5;
+  text-color: @fg0;
+}
+
+listview {
+  margin:   30px 0px;
+  spacing:  25px;
+  columns:  6;
+  fixed-columns: true;
+}
+
+element {
+  padding:      10px;
+  spacing:      10px;
+  orientation:    vertical;
+  border-radius:  5px;
+}
+
+element selected {
+  background-color: @bg2;
+  text-color: @bg0;
+}
+
+element-icon {
+  size: 64px;
+  horizontal-align: 0.5;
+}
+
+element-text {
+  horizontal-align: 0.5;
+  vertical-align: 0.5;
+  text-color: inherit;
+}
