@@ -1,20 +1,53 @@
-# Gruvbox Hyprland Rice
-A performance-focused, Gruvbox-themed setup for Hyprland.
+## Monochrome-Rice
+A minimalist, high-contrast black-and-white configuration for Hyprland on CachyOS. Designed for focus, speed, and a clean aesthetic.
+Components
 
 ## Screenshots
-![Rice](ScreenShots/1.png)
+![Rice](ScreenShot/1.png)
 ![Hyprland](https://img.shields.io/badge/WM-Hyprland-blue?style=for-the-badge&logo=hyprland)
-![Theme](https://img.shields.io/badge/Theme-Gruvbox-orange?style=for-the-badge)
+![Theme](https://img.shields.io/badge/Theme-Monochrome-black?style=for-the-badge&logo=linux&logoColor=white)
 
 ## Details
-- **OS:** EndeavourOS
+- **OS:** CachyOS
 - **WM:** Hyprland
 - **Terminal:** Alacritty
-- **Editor:** Neovim (LazyVim based)
-- **Colors:** Gruvbox (Dark)
+- **Colors:** Monochrome 
+
+## Aesthetics
+The theme is built on a strict Monochrome palette:
+
+    Background: #000000 (Pure Black)
+
+    Foreground: #FFFFFF (Pure White)
+
+    Accents: Shades of Grey.
+    Shutterstock
 
 ## Dependencies
 To get this rice working, you'll need the following packages:
+
+## Fast Setup (Deployment)
+Since this is a Arch-based rice, you can test these configurations by adding the files to your ~/.config/ directory.
+Manual Setup
+
+    Clone the repo:
+    Bash
+
+    git clone https://github.com/bilalElGohary/Monochrome-Rice.git
+
+    Apply Rofi Theme:
+    Copy the .rasi files to ~/.config/rofi/.
+
+1. Clone the repository
+```bash
+git clone https://github.com/bilalElGohary/Monochrome-Rice.git
+cd Monochrome-Rice
+```
+
+2. Move the config files to your local directory
+```bash
+cp DotFiles/.config/* ~/.config/
+```
 
 ### Install Core Packages (Official Repos)
 
@@ -50,21 +83,8 @@ environment.systemPackages = with pkgs; [
 ];
 ```
 
-## Fast Setup (Deployment)
-Once the dependencies are installed, you can apply the configurations:
-
-1. Clone the repository
-```bash
-git clone https://github.com/bilalElGohary/Hyprland-Rice.git
-cd HyprlandRice
-```
-2. Move the config files to your local directory
-```bash
-cp -r DotFiles/.config/* ~/.config/
-```
-
-## Special Thanks
-Thanks for checking out my setup! If you find this useful, don't forget to star the repository. Keep ricing
+# Special Thanks
+  Thanks for checking out my setup! If you find this useful, don't forget to star the repository. Keep ricing
 
 ---
 ## Get in touch
