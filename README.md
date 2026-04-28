@@ -5,6 +5,7 @@ Components
 ## Screenshots
 ![Rice](ScreenShot/1.png)
 ![Hyprland](https://img.shields.io/badge/WM-Hyprland-blue?style=for-the-badge&logo=hyprland)
+![Distro](https://img.shields.io/badge/Distro-CachyOS-008080?style=for-the-badge&logo=cachyos&logoColor=white)
 ![Theme](https://img.shields.io/badge/Theme-Monochrome-black?style=for-the-badge&logo=linux&logoColor=white)
 
 ## Details
@@ -14,14 +15,10 @@ Components
 - **Colors:** Monochrome 
 
 ## Aesthetics
-The theme is built on a strict Monochrome palette:
-
-    Background: #000000 (Pure Black)
-
-    Foreground: #FFFFFF (Pure White)
-
-    Accents: Shades of Grey.
-    Shutterstock
+The theme utilizes a strict **Monochrome** palette:
+* **Background:** `#000000` (Pure Black)
+* **Foreground:** `#FFFFFF` (Pure White)
+* **Accents:** High-contrast greyscale tones for UI depth.
 
 ## Dependencies
 To get this rice working, you'll need the following packages:
