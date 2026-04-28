@@ -27,14 +27,6 @@ To get this rice working, you'll need the following packages:
 Since this is a Arch-based rice, you can test these configurations by adding the files to your ~/.config/ directory.
 Manual Setup
 
-    Clone the repo:
-    Bash
-
-    git clone https://github.com/bilalElGohary/Monochrome-Rice.git
-
-    Apply Rofi Theme:
-    Copy the .rasi files to ~/.config/rofi/.
-
 1. Clone the repository
 ```bash
 git clone https://github.com/bilalElGohary/Monochrome-Rice.git
